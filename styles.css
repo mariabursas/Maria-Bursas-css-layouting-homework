@@ -1,0 +1,99 @@
+body {
+    margin: 20px;
+}
+
+.div-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+.div-container>div {
+    flex-basis: 30%;
+}
+
+img {
+    height: auto;
+    max-width: 400%;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Muli';
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.review,
+.description {
+    color: grey;
+    font-weight:500;
+    font-size: 20px;
+}
+
+.starIcon,
+.heartIcon {
+    color: grey;
+    cursor: pointer;
+    font-size: 35px;
+
+}
+
+.starIcon:active:hover {
+    color: orange;
+}
+
+.heartIcon:active {
+    color: red;
+}
+
+.review,
+.actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.review>div {
+    flex-basis: 20%;
+}
+
+button,
+button:hover {
+    padding: 17px 30px;
+    cursor: pointer;
+    margin: 16px;
+    border: black solid 3px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+}
+
+.cartButton {
+    background-color: black;
+    color: white;
+    flex-basis: 35%;
+
+}
+
+.viewButton {
+    background-color: white;
+    color: black;
+    flex-basis: 35%;
+}
+
+button:hover {
+    background-color: rgb(177, 173, 173);
+    color: black;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.actions,
+.review {
+    margin-left: 15%;
+    margin-right: 15%;
+}
